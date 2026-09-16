@@ -28,6 +28,7 @@ async def main():
 # Run the async function
 asyncio.run(main())
 ```
+
 ## Replaying a run without calling the model
 
 Once the check above passes, the next thing that costs you money is re-running a whole
@@ -57,4 +58,3 @@ Three limits worth knowing before you rely on it:
   **retrievers still hit the real web** on replay.
 - Embedding calls are not captured by the default adapter, so a run whose behaviour
   depends on vector search can replay cleanly at the LLM layer and still not reproduce.
-```
