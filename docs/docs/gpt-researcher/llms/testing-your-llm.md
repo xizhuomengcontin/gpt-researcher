@@ -27,7 +27,7 @@ async def main():
 
 # Run the async function
 asyncio.run(main())
-
+```
 ## Replaying a run without calling the model
 
 Once the check above passes, the next thing that costs you money is re-running a whole
